@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Orange App Test Regression PW Suite" thread-count = "2" parallel = "tests" verbose="4">
+
+	<listeners>
+		<listener
+			class-name="com.sdet.orangeapp.listeners.ExtentReportListener" />
+
+	</listeners>
+
+
+
+
+	<test name="Orange App Dashboard Page Test">
+		<classes>
+			<class name="com.sdet.orangeapp.tests.DashboardPageTest" />
+		</classes>
+	</test>
+	
+	<test name="Orange App Login Page Test">
+		<classes>
+			<class name="com.sdet.orangeapp.tests.LoginPageTest" />
+		</classes>
+	</test>
+	
+</suite>
